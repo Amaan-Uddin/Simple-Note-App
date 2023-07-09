@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notes App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body style="height: 100vh;margin: 0;padding: 0;">
+
+    <div class="container d-flex align-items-center justify-content-center flex-column gap-3 h-100">
+        <h1>UN-AUTHORIZED</h1>
+        <form action="/auth/unauthorized" method="post">
+            <button class="btn btn-primary">Reload</button>
+        </form>
+    </div>
+    <script>
+        // Disable back button functionality
+        function disableBackButton() {
+            history.pushState(null, null, location.href);
+            window.onpopstate = function(event) {
+            history.go(1);
+        };
+        }
+
+        // Call the function to disable the back button
+        disableBackButton();
+    </script>
+</body>
+</html>

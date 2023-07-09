@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notes App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container mt-2 mb-4">
+        <h2>user: <span class="text-primary"><%= user.username %></span></h2>
+        <h5>email: <span class="text-muted"><%= user.email%></span></h5>
+        <hr>
+    </div>
+    <form action="/note/<%= user.username %>/put?_method=PUT" method="POST">
+        <%- include('_add_note.ejs') %>
+        <div class="container">
+            <a href="/main/<%= user.username %>" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </form>
+</body>
+</html>

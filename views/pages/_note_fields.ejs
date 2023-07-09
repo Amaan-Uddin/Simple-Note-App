@@ -1,0 +1,13 @@
+<div class=" form-group container mb-4">
+    <label for="subject" class="mb-1">Subject</label>
+    <input type="text" name="subject" id="subject" class="form-control mb-2" required>
+</div>
+<div class="container">
+    <div class="mb-3" id="note-buttons">
+        <button class="btn btn-primary" type="button" onclick="addFields()" id="add">Add Note</button>
+        <button class="btn btn-danger d-none" type="button" onclick="removeFields()" id="remove">Remove Note</button>
+    </div>
+    <a href="/main/<%= user.username %>" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-success">Save</button>
+</div>
+

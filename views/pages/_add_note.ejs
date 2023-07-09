@@ -1,0 +1,8 @@
+<div class=" form-group container mb-4">
+    <label for="subject" class="mb-1">Subject</label>
+    <input type="text" name="subject" id="subject" class="form-control mb-2 bg-body-secondary" value="<%= subject %>" readonly autofocus required>
+    <label for="title" class="mb-1">Title</label>
+    <input type="text" name="title" id="title" class="form-control mb-2" required value="<%=note.title%>">
+    <label for="content" class="mb-1">Content</label>
+    <textarea type="text" name="content" id="content" class="form-control mb-2" required rows="5"><%=note.content%></textarea>
+</div>
