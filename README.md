@@ -27,26 +27,29 @@ Follow these steps to get the project up and running on your local machine:
    ```shell
    git clone https://github.com/your-username/simple-note-taking-app.git
 
-2.  Install dependencies:
-      
-    `cd simple-note-taking-appbr`
-    
-    `npm install` 
-    
-3.  Set up the MongoDB connection:
-    
-    -   Make sure you have MongoDB installed and running.
-    -   Update the MongoDB connection URL in the project's configuration file.
+   ```
+
+2. Install dependencies:
+
+   `cd simple-note-taking-appbr`
+
+   `npm install`
+
+3. Set up the MongoDB connection:
+
+   - Make sure you have MongoDB installed and running.
+   - Update the MongoDB connection URL in the project's configuration file.
+
 4. Configure JWT tokens:
 
-	-   Generate an access token secret and refresh token secret.
-	-   Update the JWT configuration in the project's configuration file, including the secret keys.
-5.  Start the server
-    
-    `npm start` 
-    
-6.  Open your web browser and visit `http://localhost:3000` to access the app.
-    
+   - Generate an access token secret and refresh token secret.
+   - Update the JWT configuration in the project's configuration file, including the secret keys.
+
+5. Start the server
+
+   `npm start`
+
+6. Open your web browser and visit `http://localhost:3000` to access the app.
 
 ## Contributing
 
@@ -60,10 +63,10 @@ This project is licensed under the [MIT License](https://chat.openai.com/c/LICEN
 
 ## Acknowledgments
 
--   [Node.js](https://nodejs.org/)
--   [Express](https://expressjs.com/)
--   [MongoDB](https://www.mongodb.com/)
--   [Mongoose](https://mongoosejs.com/)
--   [EJS](https://ejs.co/)
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [EJS](https://ejs.co/)
 
-Thank you for using our Simple Note Taking App! If you have any questions or need assistance, please reach out to our support team.
+Thank you for using our Simple Note Taking App! If you have any questions or need assistance, please feel free to reach out.
