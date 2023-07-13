@@ -24,14 +24,11 @@ Follow these steps to get the project up and running on your local machine:
 
 1. Clone the repository:
 
-   ```shell
-   git clone https://github.com/your-username/simple-note-taking-app.git
-
-   ```
+   `git clone https://github.com/Amaan-Uddin/Simple-Note-App.git`
 
 2. Install dependencies:
 
-   `cd simple-note-taking-appbr`
+   `cd Simple-Note-App`
 
    `npm install`
 
